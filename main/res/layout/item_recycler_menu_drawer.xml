@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/itemDrawerLayout"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_xxhdpi5dp"
+        android:paddingTop="@dimen/_xxhdpi5dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_item_drawer"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="7dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/itemDrawerIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="2dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/itemDrawerName"
+                style="@style/TextHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/colorWhite" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemDrawerName"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/itemDrawerIconNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/item_drawer_icon"
+                        android:src="@mipmap/unseen" />
+
+                    <TextView
+                        android:id="@+id/itemDrawerNumberNew"
+                        style="@style/TextNormalDivider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/itemDrawerIconNew"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/_xxhdpi7dp"
+                        android:text="9999" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/itemDrawerIconSeen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/item_drawer_icon"
+                        android:src="@mipmap/seen" />
+
+                    <TextView
+                        android:id="@+id/itemDrawerNumberSeen"
+                        style="@style/TextNormalDivider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/itemDrawerIconSeen"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/_xxhdpi7dp"
+                        android:text="9999" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="@string/main_fragment_tag">
+
+    <TextView
+        android:id="@+id/search_void"
+        style="@style/TextNormalContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_xxhdpi5dp"
+        android:paddingLeft="@dimen/_xxhdpi10dp"
+        android:paddingRight="@dimen/_xxhdpi10dp"
+        android:paddingTop="@dimen/_xxhdpi5dp"
+        android:text="@string/filter_void_read"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/main_adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_main_id"></com.google.android.gms.ads.AdView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mainRecylerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_adView"
+        android:layout_below="@id/search_void"
+        android:layout_marginBottom="@dimen/_xxhdpi7dp"
+        android:layout_marginLeft="@dimen/_xxhdpi10dp"
+        android:layout_marginRight="@dimen/_xxhdpi10dp"
+        android:layout_marginTop="@dimen/_xxhdpi7dp"
+        android:scrollbars="none" />
+</RelativeLayout>

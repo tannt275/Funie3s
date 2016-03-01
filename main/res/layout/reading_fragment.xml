@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_xxhdpi7dp"
+            android:layout_marginRight="@dimen/_xxhdpi7dp"
+            android:layout_marginTop="@dimen/_xxhdpi7dp"
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:id="@+id/closeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/app_close_icon" />
+
+            <ImageView
+                android:id="@+id/shareIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/closeIcon"
+                android:layout_toStartOf="@+id/closeIcon"
+                android:src="@drawable/app_share_icon" />
+
+            <TextView
+                android:id="@+id/readingCategory"
+                style="@style/TextNormalContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/shareIcon"
+                android:paddingLeft="@dimen/_xxhdpi10dp"
+                android:text="@string/reading_category"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_xxhdpi7dp"
+            android:layout_marginRight="@dimen/_xxhdpi7dp"
+            android:background="@color/colorWhite">
+
+
+            <TextView
+                android:id="@+id/readingName"
+                style="@style/TextHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/_xxhdpi10dp"
+                android:text="@string/reading_name"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/readingContent"
+            style="@style/TextNormalContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_xxhdpi7dp"
+            android:layout_marginRight="@dimen/_xxhdpi7dp"
+            android:paddingTop="@dimen/_xxhdpi5dp"
+            android:text="@string/app_name" />
+
+    </LinearLayout>
+</ScrollView>

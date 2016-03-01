@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Funie3s</string>
+
+    <!--for admods-->
+    <string name="banner_main_id">ca-app-pub-4079505062217481/1064824453</string>
+    <string name="banner_reading_top_id">ca-app-pub-4079505062217481/4912941258</string>
+    <string name="banner_reading_bottom_id">ca-app-pub-4079505062217481/6389674450</string>
+    <string name="facebook_app_id">140919076247932</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--for tag-->
+    <string name="main_fragment_tag">MainFragmentTag</string>
+
+    <string name="item_drawer_icon">Seen Or New</string>
+    <string name="category_prefix">Thể loại: %1$s</string>
+    <string name="state_read_prefix">Trạng thái:</string>
+    <string name="state_read">Đã đọc</string>
+    <string name="state_unread">Chưa đọc</string>
+    <string name="reading_current">%1$s / %2$s</string>
+
+    <string name="category_random">Truyện ngẫu nhiên</string>
+    <string name="search_hint">Enter here</string>
+
+    <!--for menu overflow-->
+    <string name="menu_filter_read">Đã đọc</string>
+    <string name="menu_filter_unread">Chưa đọc</string>
+    <string name="filter_void_read">Tất cả các truyện trong danh sách hiện bạn đều đã đọc</string>
+    <string name="filter_void_unread">Tất cả các truyện trong danh sách hiện tại đều chưa đọc</string>
+    <string name="result_return_0">Không tìm thấy nội dung yêu cầu.</string>
+    <string name="result_return_1">Tìm thấy %1$s kết quả</string>
+
+    <!--for reading activity-->
+    <string name="reading_category">Thể loại: %1$s</string>
+    <string name="reading_name">Tên: %1$s</string>
+    <string name="history_search">history_search</string>
+
+</resources>
