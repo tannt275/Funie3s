@@ -2,7 +2,6 @@ package sirun.tannt275.funie3s;
 
 import android.app.SearchManager;
 import android.content.Context;
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -22,7 +21,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -62,8 +60,7 @@ public class MainActivity extends AppCompatActivity implements DrawerHolder.Clic
     public static List<Integer> listRandom;
 
     private List<String> listSearch;
-    // only for test
-    private String urlIcon = "http://media.salon.com/2012/12/kristen_stewart.jpg";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

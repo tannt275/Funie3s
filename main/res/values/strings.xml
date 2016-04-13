@@ -37,5 +37,6 @@
     <string name="reading_category">Thể loại: %1$s</string>
     <string name="reading_name">Tên: %1$s</string>
     <string name="history_search">history_search</string>
+    <string name="title_activity_refine">RefineActivity</string>
 
 </resources>

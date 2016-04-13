@@ -2,11 +2,12 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#903F51B5</color>
     <color name="colorPriBlack">#848484</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorActionBarPrimary">#304FFE</color>
     <color name="colorActionBarPrimaryDark">#1A237E</color>
+    <color name="colorStatusBar">#304FFE</color>
     <color name="colorDrawer">#FF7043</color>
     <color name="colorDrawerSelector">#60FF7043</color>
     <color name="colorDrawerDivider">#E0E0E0</color>

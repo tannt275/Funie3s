@@ -1,17 +1,11 @@
 package sirun.tannt275.funie3s;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
-
-import java.util.List;
 
 import sirun.tannt275.funie3s.appcontroll.ConfigApp;
 import sirun.tannt275.funie3s.appcontroll.FileUtils;
