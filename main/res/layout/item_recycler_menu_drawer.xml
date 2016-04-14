@@ -2,7 +2,7 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     app:cardUseCompatPadding="true">
 
     <LinearLayout
@@ -21,11 +21,11 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/itemDrawerIcon"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_centerInParent="true"
                 android:src="@mipmap/ic_launcher"
-                app:civ_border_color="@color/colorWhite"
+                app:civ_border_color="@android:color/holo_red_dark"
                 app:civ_border_width="2dp" />
         </RelativeLayout>
 
@@ -35,15 +35,17 @@
 
             <TextView
                 android:id="@+id/itemDrawerName"
-                style="@style/TextHeader"
+                style="@style/TextAppearance.AppCompat.Body2"
                 android:layout_width="match_parent"
+                android:padding="10dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
                 android:text="@string/app_name"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@android:color/black" />
 
             <LinearLayout
+                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/itemDrawerName"
@@ -62,11 +64,12 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:contentDescription="@string/item_drawer_icon"
-                        android:src="@mipmap/unseen" />
+                        android:src="@drawable/app_unseen_icon" />
 
                     <TextView
+                        android:textColor="@android:color/black"
                         android:id="@+id/itemDrawerNumberNew"
-                        style="@style/TextNormalDivider"
+                        style="@style/TextAppearance.AppCompat.Body1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -89,11 +92,12 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:contentDescription="@string/item_drawer_icon"
-                        android:src="@mipmap/seen" />
+                        android:src="@drawable/app_seen_icon" />
 
                     <TextView
                         android:id="@+id/itemDrawerNumberSeen"
-                        style="@style/TextNormalDivider"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@android:color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"

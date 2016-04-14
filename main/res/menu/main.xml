@@ -17,12 +17,12 @@
             <item android:id="@+id/menu_filter_read"
                 android:title="@string/menu_filter_read"
                 app:showAsAction="never"
-                android:icon="@mipmap/seen_dark"
+                android:icon="@drawable/app_seen_icon"
                 />
             <item android:id="@+id/menu_filter_unread"
                 android:title="@string/menu_filter_unread"
                 app:showAsAction="never"
-                android:icon="@mipmap/unseen_dark"
+                android:icon="@drawable/app_unseen_icon"
                 />
         </menu>
     </item>
