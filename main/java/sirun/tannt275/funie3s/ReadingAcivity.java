@@ -31,7 +31,7 @@ public class ReadingAcivity extends AppCompatActivity {
     private TextView currentText;
     private ViewPager viewPager;
     private AdView reading_act_adview_bottom;
-    private AdView reading_act_adview;
+//    private AdView reading_act_adview;
     private AdRequest reading_act_adrequest;
 
     private AdapterReadingFragment adapterReadingFragment;
@@ -59,10 +59,10 @@ public class ReadingAcivity extends AppCompatActivity {
 
         }
         Log.e(TAG, "data get " + "current post: " + current_position + " idCategory: " + idCategory );
-        currentText = (TextView) findViewById(R.id.readingCurrent);
-        currentText.setVisibility(View.INVISIBLE);
-        reading_act_adview = (AdView) findViewById(R.id.adview_reading);
-        reading_act_adview.setVisibility(View.GONE);
+//        currentText = (TextView) findViewById(R.id.readingCurrent);
+//        currentText.setVisibility(View.INVISIBLE);
+//        reading_act_adview = (AdView) findViewById(R.id.adview_reading);
+//        reading_act_adview.setVisibility(View.GONE);
         reading_act_adview_bottom = (AdView) findViewById(R.id.adview_reading_bottom);
         reading_act_adview_bottom.setVisibility(View.GONE);
         reading_act_adrequest = new AdRequest.Builder()
@@ -76,22 +76,23 @@ public class ReadingAcivity extends AppCompatActivity {
         }
 //        listStories = testStoies();
         if (ConfigApp.checkToShowAd(ConfigApp.READING_SHOW_AD_COUNT_IN_DAY)) {
-            reading_act_adview.setVisibility(View.VISIBLE);
-            reading_act_adview.loadAd(reading_act_adrequest);
+//            reading_act_adview.setVisibility(View.VISIBLE);
+//            reading_act_adview.loadAd(reading_act_adrequest);
             reading_act_adview_bottom.setVisibility(View.VISIBLE);
             reading_act_adview_bottom.loadAd(reading_act_adrequest);
             ConfigApp.updateShowAd(ConfigApp.READING_SHOW_AD_COUNT_IN_DAY);
         } else{
-            reading_act_adview.setVisibility(View.GONE);
+//            reading_act_adview.setVisibility(View.GONE);
             reading_act_adview_bottom.setVisibility(View.GONE);
         }
         adapterReadingFragment = new AdapterReadingFragment(getSupportFragmentManager(), listStories);
         viewPager.setAdapter(adapterReadingFragment);
-        if (current_position != 9999 ){
-            currentText.setText(String.format(getString(R.string.reading_current), (current_position + 1), listStories.size()));
-            currentText.setVisibility(View.VISIBLE);
-            viewPager.setCurrentItem(current_position);
-        }
+//        if (current_position != 9999 ){
+//            currentText.setText(String.format(getString(R.string.reading_current), (current_position + 1), listStories.size()));
+//            currentText.setVisibility(View.VISIBLE);
+//            viewPager.setCurrentItem(current_position);
+//        }
+        viewPager.setCurrentItem(current_position);
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {

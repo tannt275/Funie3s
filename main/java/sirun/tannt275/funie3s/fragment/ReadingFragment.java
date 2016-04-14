@@ -20,6 +20,7 @@ import com.facebook.share.Sharer;
 import com.facebook.share.model.ShareLinkContent;
 import com.facebook.share.widget.ShareDialog;
 
+import sirun.tannt275.funie3s.MainActivity;
 import sirun.tannt275.funie3s.R;
 import sirun.tannt275.funie3s.appcontroll.ConfigApp;
 import sirun.tannt275.funie3s.database.DataBaseHandler;
@@ -121,6 +122,9 @@ public class ReadingFragment extends Fragment {
     }
 
     private void closeCurrentStory() {
+        Intent toMainActivity = new Intent(getActivity(), MainActivity.class);
+        startActivity(toMainActivity);
+        getActivity().finish();
     }
 
     @Override

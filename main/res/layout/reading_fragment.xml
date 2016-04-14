@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite">
+    android:background="@android:color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
             android:layout_marginLeft="@dimen/_xxhdpi7dp"
             android:layout_marginRight="@dimen/_xxhdpi7dp"
             android:layout_marginTop="@dimen/_xxhdpi7dp"
-            android:background="@color/colorWhite">
+            android:background="@android:color/white">
 
             <ImageView
                 android:id="@+id/closeIcon"
@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/app_close_icon" />
+                android:src="@drawable/app_close_icons" />
 
             <ImageView
                 android:id="@+id/shareIcon"
@@ -32,11 +32,11 @@
                 android:layout_centerVertical="true"
                 android:layout_toLeftOf="@+id/closeIcon"
                 android:layout_toStartOf="@+id/closeIcon"
-                android:src="@drawable/app_share_icon" />
+                android:src="@drawable/app_share_icons" />
 
             <TextView
                 android:id="@+id/readingCategory"
-                style="@style/TextNormalContent"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -53,12 +53,12 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_xxhdpi7dp"
             android:layout_marginRight="@dimen/_xxhdpi7dp"
-            android:background="@color/colorWhite">
+            android:background="@android:color/white">
 
 
             <TextView
                 android:id="@+id/readingName"
-                style="@style/TextHeader"
+                style="@style/Base.TextAppearance.AppCompat.Body2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -71,12 +71,12 @@
 
         <TextView
             android:id="@+id/readingContent"
-            style="@style/TextNormalContent"
+            style="@style/TextAppearance.AppCompat.Body1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_xxhdpi7dp"
             android:layout_marginRight="@dimen/_xxhdpi7dp"
-            android:paddingTop="@dimen/_xxhdpi5dp"
+            android:padding="5dp"
             android:text="@string/app_name" />
 
     </LinearLayout>

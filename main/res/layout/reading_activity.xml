@@ -6,34 +6,33 @@
     android:layout_marginTop="@dimen/_xxhdpi5dp"
     android:background="@color/colorWhite">
 
-    <RelativeLayout
-        android:id="@+id/reading_activity_header"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/reading_activity_header"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
 
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/adview_reading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            ads:adSize="BANNER"
-            ads:adUnitId="@string/banner_reading_top_id">
-        </com.google.android.gms.ads.AdView>
+    <!--&lt;!&ndash;<com.google.android.gms.ads.AdView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/adview_reading"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;ads:adSize="BANNER"&ndash;&gt;-->
+    <!--&lt;!&ndash;ads:adUnitId="@string/banner_reading_top_id">&ndash;&gt;-->
+    <!--&lt;!&ndash;</com.google.android.gms.ads.AdView>&ndash;&gt;-->
 
-        <TextView
-            android:id="@+id/readingCurrent"
-            style="@style/TextNormalDivider"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/_xxhdpi5dp"
-            android:layout_marginStart="@dimen/_xxhdpi5dp"
-            android:layout_toLeftOf="@+id/adview_reading"
-            android:text="@string/reading_current"
-            android:textColor="@color/colorAccent" />
-    </RelativeLayout>
+    <!--<TextView-->
+    <!--android:id="@+id/readingCurrent"-->
+    <!--style="@style/TextNormalDivider"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="@dimen/_xxhdpi5dp"-->
+    <!--android:layout_marginStart="@dimen/_xxhdpi5dp"-->
+    <!--android:text="@string/reading_current"-->
+    <!--android:textColor="@color/colorAccent" />-->
+    <!--</RelativeLayout>-->
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adview_reading_bottom"
@@ -48,9 +47,8 @@
 
     <android.support.v4.view.ViewPager
         android:id="@+id/readingViewPager"
-        android:layout_above="@id/adview_reading_bottom"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/reading_activity_header" />
+        android:layout_above="@id/adview_reading_bottom" />
 
 </RelativeLayout>
