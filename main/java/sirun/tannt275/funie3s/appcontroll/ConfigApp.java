@@ -127,8 +127,9 @@ public class ConfigApp  {
     }
 
     public static String convertHtmlToString(String htmlString){
-        htmlString = htmlString.replaceAll("<p>","");
-        htmlString = htmlString.replaceAll("</p>", "\n");
+//        htmlString = htmlString.replaceAll("<p>","");
+//        htmlString = htmlString.replaceAll("</p>", "");
+        htmlString = htmlString.replaceAll("<[^>]*>", "");
         return htmlString;
     }
 }
