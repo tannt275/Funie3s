@@ -5,6 +5,7 @@
     android:background="@android:color/white">
 
     <LinearLayout
+        android:layout_margin="4dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -23,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/app_close_icons" />
+                android:src="@drawable/selector_close_image" />
 
             <ImageView
                 android:id="@+id/shareIcon"
@@ -32,11 +33,11 @@
                 android:layout_centerVertical="true"
                 android:layout_toLeftOf="@+id/closeIcon"
                 android:layout_toStartOf="@+id/closeIcon"
-                android:src="@drawable/app_share_icons" />
+                android:src="@drawable/selector_share_image" />
 
             <TextView
                 android:id="@+id/readingCategory"
-                style="@style/Base.TextAppearance.AppCompat.Body1"
+                style="@style/Base.TextAppearance.AppCompat.Body2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -58,7 +59,7 @@
 
             <TextView
                 android:id="@+id/readingName"
-                style="@style/Base.TextAppearance.AppCompat.Body2"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
