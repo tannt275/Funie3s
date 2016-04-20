@@ -64,7 +64,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:contentDescription="@string/item_drawer_icon"
-                        android:src="@drawable/app_unseen_icon" />
+                        android:src="@drawable/app_seen_icon" />
 
                     <TextView
                         android:textColor="@android:color/black"
@@ -92,7 +92,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:contentDescription="@string/item_drawer_icon"
-                        android:src="@drawable/app_seen_icon" />
+                        android:src="@drawable/app_unseen_icon" />
 
                     <TextView
                         android:id="@+id/itemDrawerNumberSeen"

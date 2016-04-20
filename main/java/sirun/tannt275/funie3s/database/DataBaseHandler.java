@@ -39,6 +39,7 @@ public class DataBaseHandler extends SQLiteOpenHelper {
     private String STORIES_ID_KEY = "id";
     private String STORIES_NAME_KEY = "name";
     private String STORIES_CONTENT_KEY = "content";
+
     private String STORIES_CAT_ID_KEY = "cat_id";
     private String STORIES_IS_READ_KEY = "is_read";
     private String STORIES_UNSIGN_NAME_KEY = "unsign";
@@ -202,9 +203,7 @@ public class DataBaseHandler extends SQLiteOpenHelper {
     public List<StoryModel> generateRandomStories(){
         List<StoryModel> listStories = getALlStories();
         List<Integer> listIndex = MainActivity.listRandom;
-        for (Integer i : listIndex) {
-            Log.e(TAG, "random is: " + i);
-        }
+        
         List<StoryModel> listRandom = new ArrayList<>();
         for (Integer i : listIndex){
             listRandom.add(listStories.get(i));
