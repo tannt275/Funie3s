@@ -101,7 +101,7 @@ public class ReadingAcivity extends AppCompatActivity {
 
             @Override
             public void onPageSelected(int position) {
-                currentText.setText(String.format(getString(R.string.reading_current), position, listStories.size()));
+//                currentText.setText(String.format(getString(R.string.reading_current), position, listStories.size()));
 
             }
 
